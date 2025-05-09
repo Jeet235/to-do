@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffffff;
+}
+
+div.container {
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.head {
+    margin-bottom: 20px;
+}
+
+#task, #priority {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #0056b3;
+}
+
+.tasks {
+    margin-top: 20px;
+}
+
+.tasks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tasks li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tasks li[data-priority='1'] {
+    background-color: #ffcccc;
+}
+
+.tasks li[data-priority='2'] {
+    background-color: #fff4cc;
+}
+
+.tasks li[data-priority='3'] {
+    background-color: #ccffcc;
+}
+
+@media (max-width: 768px) {
+    div.container {
+        padding: 20px;
+        width: 100%;
+    }
+}
